@@ -1,0 +1,54 @@
+
+Last login: Sat Jun 29 12:09:02 on ttys000
+apple@APPLEs-MacBook-Air ~ % ls
+AndroidStudioProjects	Downloads		Music
+Applications		Google Drive		Pictures
+Desktop			Library			Public
+Documents		Movies			Sites
+apple@APPLEs-MacBook-Air ~ % cd Documents
+apple@APPLEs-MacBook-Air Documents % ls
+apple@APPLEs-MacBook-Air Documents % chmod 400 mykey.pem
+apple@APPLEs-MacBook-Air Documents % ssh -i mykey.pem ec2-user@34.207.245.163
+The authenticity of host '34.207.245.163 (34.207.245.163)' can't be established.
+ECDSA key fingerprint is SHA256:flp3A9odectgaH7f3KgUDnp3b+uemSYx26Jd8g5/jEI.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '34.207.245.163' (ECDSA) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-22-112 ~]$ 
+Broadcast message from root@localhost (Sat 2024-06-29 06:44:25 UTC):
+
+The system will power off now!
+
+Connection to 34.207.245.163 closed by remote host.
+Connection to 34.207.245.163 closed.
+apple@APPLEs-MacBook-Air Documents % ls
+mykey.pem
+apple@APPLEs-MacBook-Air Documents % ssh -i mykey.pem ec2-user@35.172.190.114
+The authenticity of host '35.172.190.114 (35.172.190.114)' can't be established.
+ECDSA key fingerprint is SHA256:b/19Szqg9qIifLVuBxLWSzOhT61WucN/aVYoq3AoEfI.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '35.172.190.114' (ECDSA) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Sat Jun 29 07:07:46 2024 from 18.206.107.27
+[ec2-user@ip-172-31-24-133 ~]$ client_loop: send disconnect: Broken pipe
+apple@APPLEs-MacBook-Air Documents % ls
+mykey.pem
+apple@APPLEs-MacBook-Air Documents % 
